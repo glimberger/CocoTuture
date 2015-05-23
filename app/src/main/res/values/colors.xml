@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Basics-->
+    <color name="color_black">#000000</color>
+    <color name="color_red_A700">#d50000</color>
+
+    <!--Bootstrap alert colors-->
+    <color name="color_alert_success_text">#3c763d</color>
+    <color name="color_alert_success_bg">#dff0d8</color>
+    <color name="color_alert_success_border">#d6e9c6</color>
+    <color name="color_alert_info_text">#31708f</color>
+    <color name="color_alert_info_bg">#bce8f1</color>
+    <color name="color_alert_info_border">#bce8f1</color>
+    <color name="color_alert_warning_text">#8a6d3b</color>
+    <color name="color_alert_warning_bg">#fcf8e3</color>
+    <color name="color_alert_warning_border">#faebcc</color>
+    <color name="color_alert_danger_text">#a94442</color>
+    <color name="color_alert_danger_bg">#f2dede</color>
+    <color name="color_alert_danger_border">#ebccd1</color>
+
+    <!--Google Material-->
+    <color name="color_blue_50">#e3f2fd</color>
+    <color name="color_blue_A100">#82b1ff</color>
+    <color name="color_blue_A200">#448aff</color>
+    <color name="color_blue_A400">#2979ff</color>
+    <color name="color_blue_A700">#2962ff</color>
+</resources>

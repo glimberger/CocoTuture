@@ -1,0 +1,250 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.cnam.guillaumelimberger.cocotuture.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <!--Driver-->
+    <LinearLayout
+        android:id="@+id/subscriber_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/newOffer_textView_driver_text"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/newOffer_textView_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+        </LinearLayout>
+
+        <!--Model-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_model_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <EditText
+                android:id="@+id/new_offer_editText_model"
+                android:hint="@string/new_offer_editText_model_hint"
+                android:inputType="text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+        </LinearLayout>
+
+        <!--Color-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_color_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <Spinner
+                android:id="@+id/newOffer_spinner_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!--License-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_license_hint"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <EditText
+                android:id="@+id/new_offer_editText_license"
+                android:hint="@string/new_offer_editText_license_hint"
+                android:inputType="text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+        </LinearLayout>
+
+        <!--Meeting place-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_meetingPlace_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <EditText
+                android:id="@+id/new_offer_editText_meetingPlace"
+                android:hint="@string/new_offer_editText_meetingPlace_hint"
+                android:inputType="textPostalAddress"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+        </LinearLayout>
+
+        <!--Destination-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_destination_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <Spinner
+                android:id="@+id/newOffer_spinner_destination"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--<EditText-->
+                <!--android:id="@+id/new_offer_editText_destination"-->
+                <!--android:hint="@string/new_offer_editText_destination_hint"-->
+                <!--android:inputType="textPostalAddress"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/abc_text_size_small_material"/>-->
+
+        </LinearLayout>
+
+        <!--Meeting time-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_meetingTime_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <EditText
+                android:id="@+id/new_offer_editText_meetingTime"
+                android:hint="@string/new_offer_editText_meetingTime_hint"
+                android:inputType="time"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+        </LinearLayout>
+
+        <!--Seating-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:text="@string/new_offer_editText_seating_hint"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+
+            <Spinner
+                android:id="@+id/newOffer_spinner_seating"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/newOffer_buttonSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@string/button_submit_text"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/newOffer_buttonCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel_text"
+            android:layout_below="@+id/newOffer_buttonSubmit"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

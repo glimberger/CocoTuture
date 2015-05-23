@@ -1,0 +1,189 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.cnam.guillaumelimberger.cocotuture.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/subscriber_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/register_editText_firstName"
+            android:hint="@string/register_editText_firstname_hint"
+            android:inputType="text|textAutoComplete"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!--error message-->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_firstName_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_lastName"
+            android:hint="@string/register_editText_lastname_hint"
+            android:inputType="text|textAutoComplete"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material"/>
+
+        <!--error message-->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_lastName_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_phone"
+            android:hint="@string/register_editText_phone_hint"
+            android:inputType="phone"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!--error message-->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_phone_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_email"
+            android:hint="@string/register_editText_email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!-- validation error message -->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_email_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_login"
+            android:hint="@string/register_editText_login_hint"
+            android:inputType="text"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!-- validation error message -->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_login_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_password"
+            android:hint="@string/register_editText_password_hint"
+            android:inputType="textPassword"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!-- validation error message -->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_password_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <EditText
+            android:id="@+id/register_editText_password2"
+            android:hint="@string/register_editText_password2_hint"
+            android:inputType="textPassword"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <!-- validation error message -->
+        <!--<TextView-->
+            <!--android:id="@+id/register_textView_password2_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/color_red_A700"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/register_buttonSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@string/button_submit_text"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/register_buttonCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel_text"
+            android:layout_below="@+id/register_buttonSubmit"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

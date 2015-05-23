@@ -1,6 +1,142 @@
 <resources>
-    <string name="app_name">Cocotuture</string>
+    <!--Manifest-->
+    <string name="app_name">CocoTuture</string>
+    <string name="title_activity_login">Connexion</string>
+    <string name="title_activity_register">Création de compte</string>
+    <string name="title_activity_menu">CocoTuture</string>
+    <string name="title_activity_new_offer">Nouvelle offre</string>
+    <string name="title_activity_offer_ok">Validation de l\'offre</string>
+    <string name="title_activity_bookings">Réservations</string>
+    <string name="title_activity_cancel_offer_ok">Annulation de l\'offre</string>
+    
+    <string name="action_settings">Réglages</string>
+
+    <!--Buttons-->
+    <string name="button_ok_text">OK</string>
+    <string name="button_cancel_text">ANNULER</string>
+    <string name="button_login_text">SE CONNECTER</string>
+    <string name="button_logout_text">SE DÉCONNECTER</string>
+    <string name="button_signin_text">CRÉER UN COMPTE</string>
+    <string name="button_submit_text">VALIDER</string>
+    <string name="button_driver_menu1_text">PROPOSER UNE OFFRE</string>
+    <string name="button_driver_menu2_text">ANNULER MON OFFRE</string>
+    <string name="button_driver_menu3_text">RÉSERVATIONS EN COURS</string>
+    <string name="button_pedestrian_menu1_text">RECHERCHER UNE OFFRE</string>
+    <string name="button_pedestrian_menu2_text">ANNULER MA RÉSERVATION</string>
+    <string name="button_pedestrian_menu3_text">LES OFFRES À PROXIMITÉ</string>
+
+    <!--Messages-->
+    <string name="info_welcome">Bienvenue sur CocoTuture</string>
+    <string name="info_hello">Bonjour </string>
+    <string name="cancel_register">La création de compte a été annulée.</string>
+    <string name="register_ok_message1">Félicitations </string>
+    <string name="register_ok_message2"> vous êtes inscrit! \nVous pouvez maintenant vous connecter.</string>
+    <string name="info_logout">Vous êtes déconnecté.</string>
+    <string name="info_login">Vous êtes connecté.</string>
+    <string name="attempt_login">Tentative de connexion&#8230;</string>
+    <string name="attempt_create_subscriber">Création de l\'abonné&#8230;</string>
+    <string name="attempt_create_offer">Création de l\'offre&#8230;</string>
+    <string name="cancel_create_offer">Annulation de l\'offre.</string>
+    <string name="info_offer_saved">Votre offre a été enregistrée.</string>
+    <string name="info_send_email">Vous allez recevoir un email de confirmation.</string>
+
+    <!--Success messages-->
+    <string name="success_auth">Authentification réussie.</string>
+    <string name="success_register">Le compte a été créé avec succès.</string>
+    <string name="success_create_offer">L\'offre a été créée avec succès.</string>
+    <string name="success_cancel_offer">L\'offre a été annulée avec succès.</string>
+
+    <!--Failure messages-->
+    <string name="failure_auth">Login ou mot de passe invalide.</string>
+    <string name="failure_register">Erreur lors de la création du compte.</string>
+    <string name="failure_create_offer">Un problème est survenu lors de la création de l\'offre.</string>
+    <string name="failure_cancel_offer">Un problème est survenu lors de l\'annulation de l\'offre.</string>
+
+    <!--Error messages-->
+    <string name="error_service_not_available">Le service n\'est pas disponible.</string>
+    <string name="error_empty_text">Ce champ doit être renseigné.</string>
+    <string name="error_empty_login_pwd">Login et mot de passe doivent être renseignés.</string>
+    <string name="error_phone_match">Le numéro de téléphone n\'est pas valide.</string>
+    <string name="error_email_match">L\'adresse mail n\'est pas valide.</string>
+    <string name="error_email_maxlength">L\'adresse mail est trop longue"</string>
+    <string name="error_login_match">Le login n\'est pas valide.</string>
+    <string name="error_login_uniqueness">Ce login est déjà utilisé</string>
+    <string name="error_password_match">Le mot de passe n\'est pas valide.</string>
+    <string name="error_password_confirmation">Les mots de passe ne correspondent pas.</string>
+    <string name="error_address">L\'adresse est introuvable.</string>
+    <string name="error_time">L\'heure n\'est pas valide.</string>
+
+    <!--Car color-->
+    <string-array name="car_colors">
+        <item>Gris métallisé</item>
+        <item>Noir</item>
+        <item>Gris foncé</item>
+        <item>Blanc</item>
+        <item>Rouge</item>
+        <item>Bleu</item>
+        <item>Marron</item>
+        <item>Beige</item>
+        <item>Vert</item>
+        <item>Jaune</item>
+        <item>Autre</item>
+    </string-array>
+
+    <!--Seating numbers-->
+    <string-array name="seating">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!--Destinations-->
+    <string-array name="destinations">
+        <item>Lyon</item>
+        <item>Lille</item>
+        <item>Rouen</item>
+        <item>Strasbourg</item>
+        <item>Bordeaux</item>
+        <item>Marseille</item>
+    </string-array>
+
+    <!--activity_login-->
+    <string name="activity_login_title_text">Veuillez entrer vos identifiants</string>
+    <string name="activity_login_login_label_text">Identifiant</string>
+    <string name="activity_login_password_label_text">Mot de passe</string>
+
+    <!--activity_register-->
+    <string name="register_title_text">Création d\'un compte</string>
+    <string name="register_editText_firstname_hint">Prénom</string>
+    <string name="register_editText_lastname_hint">Nom</string>
+    <string name="register_editText_phone_hint">Téléphone</string>
+    <string name="register_editText_email_hint">Courriel</string>
+    <string name="register_editText_login_hint">Login</string>
+    <string name="register_editText_password_hint">Mot de passe</string>
+    <string name="register_editText_password2_hint">Mot de passe (confirmation)</string>
+
+    <!--activity_menu-->
+    <string name="menu_driver_message">"Je suis conducteur et je souhaite"</string>
+    <string name="menu_pedestrian_message">"Je suis piéton et je souhaite"</string>
+
+    <!--activity_new_offer-->
+    <string name="newOffer_textView_driver_text">Conducteur</string>
+    <string name="new_offer_editText_firstname_hint">Prénom</string>
+    <string name="new_offer_editText_lastname_hint">Nom</string>
+    <string name="new_offer_editText_model_hint">Modèle</string>
+    <string name="new_offer_editText_color_hint">Couleur</string>
+    <string name="new_offer_editText_license_hint">Immatriculation</string>
+    <string name="new_offer_editText_meetingPlace_hint">Lieu du RdV</string>
+    <string name="new_offer_editText_destination_hint">Destination</string>
+    <string name="new_offer_editText_meetingTime_hint">Heure du RdV</string>
+    <string name="new_offer_editText_seating_hint">Nb places</string>
+
+    <!--activity_bookings-->
+
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
 </resources>

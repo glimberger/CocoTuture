@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.cnam.guillaumelimberger.cocotuture.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/menu_driver_message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/menu_buttonDriverNewOffer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_driver_menu1_text" />
+
+    <Button
+        android:id="@+id/menu_buttonDriverCancelOffer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_driver_menu2_text"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/menu_buttonDriverBookings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_driver_menu3_text"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/menu_pedestrian_message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/menu_buttonPedestrianSearchOffer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_pedestrian_menu1_text"/>
+
+    <Button
+        android:id="@+id/menu_buttonPedestrianCancelBooking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_pedestrian_menu2_text"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/menu_buttonPedestrianOffers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_pedestrian_menu3_text"/>
+
+    <Button
+        android:id="@+id/menu_buttonLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_logout_text"/>
+
+</LinearLayout>
